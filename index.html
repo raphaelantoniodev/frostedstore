@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frosted Store - Lojinha de Set Marretão FTF | Flee the Facility</title>
+  <meta name="description" content="Frosted Store, sua loja especializada em marretas, marretão e gemas para Flee the Facility no Roblox - FTF. Aproveite os melhores preços e seleções exclusivas de itens para elevar seu jogo. Compre agora e domine suas partidas de FTF!" />
+  <meta name="keywords" content="Frosted Store, Flee the Facility, Roblox, marretas, marretão, gemas, loja de marretas, acessórios Roblox, Sets, Flee the Facility, FTF" />
+  <meta name="author" content="Frosted Store" />
+  <meta property="og:description" content="Frosted Store, loja de marretas e gemas para Flee the Facility - FTF. Compre seu Marretão barato com a loja Frosted Store, a mais confiável de Sets Flee the Facility! Aproveite os melhores preços de Marretão e Gemas." />
+  <link rel="icon" type="image/webp" href="assets/images/Ancient Portal.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <div class="loader-icon">
+          <i class="fas fa-snowflake"></i>
+        </div>
+        <h2>Frosted Store</h2>
+      </div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="main-navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <div class="logo-icon">
+          <i class="fas fa-snowflake"></i>
+        </div>
+        <div class="logo-text">
+          <h1>Frosted Store</h1>
+          <p>Sua loja de sets FTF</p>
+        </div>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="#sets" class="nav-link active" data-tab="sets">
+          <i class="fas fa-box-open"></i> Sets
+        </a>
+        <a href="termos.html" class="nav-link" data-tab="termos">
+          <i class="fas fa-file-contract"></i> Termos
+        </a>
+        <a href="#faq" class="nav-link" data-tab="faq">
+          <i class="fas fa-question-circle"></i> FAQ
+        </a>
+      </div>
+      
+      <div class="navbar-cta">
+        <a href="https://discord.gg/seu-servidor" target="_blank" class="cta-button">
+          <i class="fas fa-shopping-cart"></i> COMPRE AQUI
+        </a>
+      </div>
+      
+      <button class="navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <section id="sets" class="tab-content active">
+      <div class="section-header">
+        <div class="section-title">
+          <h2><i class="fas fa-search"></i> Encontre seu Set</h2>
+          <p>Busque pelos melhores sets do Flee the Facility</p>
+        </div>
+        <div class="section-actions">
+          <div class="search-container">
+            <div class="search-bar">
+              <input type="text" id="searchInput" class="filter-input" placeholder="Digite o nome do SET..." aria-label="Campo de busca por nome de SET" />
+              <i class="fas fa-search search-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sets-grid" id="setGrid">
+        <div class="product-card">
+          <div class="product-badge">Mais Vendido</div>
+          <div class="product-image">
+            <img src="assets/images/Acidic Potions.png" alt="Marretão FTF" loading="lazy" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Marretão FTF</h3>
+            <div class="product-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(24)</span>
+            </div>
+            <div class="product-price">
+              <span class="original-price">R$ 15,90</span>
+              <span class="current-price">R$ 12,90</span>
+            </div>
+          </div>
+          <div class="product-actions">
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="buy-now-btn">
+              <i class="fas fa-shopping-cart"></i> Comprar
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pagination">
+        <button class="page-btn" id="prevPage" disabled><i class="fas fa-chevron-left"></i></button>
+        <button class="page-btn active" id="page1">1</button>
+        <button class="page-btn" id="page2">2</button>
+        <button class="page-btn" id="page3">3</button>
+        <button class="page-btn" id="nextPage"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      
+    </section>
+
+    <section id="faq" id='faq'class="tab-content">
+      <div class="section-header">
+        <h2><i class="fas fa-question-circle"></i> Perguntas Frequentes</h2>
+        <p>Tire suas dúvidas sobre a Frosted Store</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-intro">
+          <div class="faq-buy-info">
+            <h3><i class="fas fa-shopping-cart"></i> Onde Comprar?</h3>
+            <p>Compre pelo nosso servidor do Discord ou entre em contato via TikTok. Nunca realize pagamentos fora dos canais oficiais:</p>
+            <div class="contact-buttons">
+              <a href="https://discord.gg/seu-servidor" target="_blank" class="contact-btn discord-btn">
+                <i class="fab fa-discord"></i> Discord: discord.gg/frosted
+              </a>
+              <a href="https://www.tiktok.com/@frostedstore" target="_blank" class="contact-btn tiktok-btn">
+                <i class="fab fa-tiktok"></i> TikTok: @frostedstore
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">1</span>
+              <h3>Posso ser banido do Flee the Facility ao comprar sets?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>A chance de banimento é <strong>muito baixa</strong>, mas não podemos garantir 100% de segurança. Seu nome de usuário será mantido em total sigilo pela Frosted Store. A moderação do jogo <strong>não tem acesso às nossas transações</strong>.</p>
+              <p>O risco só aumenta se você divulgar publicamente sua compra. Evite contar a outras pessoas ou se expor em chats ou redes sociais.</p>
+              <p class="faq-summary"><strong>Resumo:</strong> Comprando e mantendo sigilo, as chances de banimento são <strong>praticamente zero</strong>.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">2</span>
+              <h3>Posso pagar com Robux ou gift cards?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p><strong>Não.</strong> Aceitamos exclusivamente <strong>Pix</strong> como forma de pagamento. Robux, gift cards e outros métodos não são aceitos.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">3</span>
+              <h3>Em quanto tempo vou receber meus itens?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Se o vendedor estiver online, a entrega é <strong>imediata</strong>. Caso contrário, temos um prazo de até <strong>24 horas</strong> para concluir a entrega. Se esse prazo for ultrapassado sem retorno, o valor será reembolsado.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">4</span>
+              <h3>Posso pedir reembolso depois de receber?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p><strong>Não.</strong> Após a entrega dos sets, não é possível solicitar reembolso sob nenhuma circunstância, conforme nossos <a href="termos.html" data-tab="termos">Termos de Serviço</a>.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">5</span>
+              <h3>E se eu pagar e não receber o produto?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Se o prazo de <strong>24 horas</strong> for ultrapassado sem resposta do vendedor, <strong>o reembolso será efetuado automaticamente</strong>. Nós prezamos pela transparência e confiabilidade em todas as transações.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">6</span>
+              <h3>A loja vende outras coisas além de sets?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p><strong>Não.</strong> A <strong>Frosted Store</strong> é especializada exclusivamente em <strong>sets do jogo Flee the Facility</strong>.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">7</span>
+              <h3>Posso confiar na Frosted Store?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p><strong>Com certeza!</strong> Eu, <strong>Raymisson</strong>, sou o dono da Frosted Store e atuo como desenvolvedor e vendedor há muito tempo nesse mercado:</p>
+              <ul class="credits-list">
+                <li><i class="fas fa-store"></i> Desenvolvedor da loja <strong>Marina Vendas</strong></li>
+                <li><i class="fas fa-store"></i> Desenvolvedor da loja <strong>FTF Store</strong></li>
+                <li><i class="fas fa-store"></i> Vendedor na <strong>Canight Store</strong></li>
+                <li><i class="fas fa-store"></i> Desenvolvedor da <strong>Julia K Player</strong></li>
+                <li><i class="fas fa-store"></i> Desenvolvedor da <strong>Basket's SC</strong></li>
+              </ul>
+              <p>Já realizei <strong>centenas de vendas seguras</strong> no Discord. Nossa reputação é nossa maior garantia!</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-number">8</span>
+              <h3>Menores de idade podem comprar?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Sim, mas <strong>precisam de autorização dos responsáveis</strong>. Compras realizadas sem consentimento dos pais/responsáveis serão consideradas <strong>irrevogáveis</strong>, conforme nossos <a href="termos.html" data-tab="termos">Termos de Serviço</a>.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-contact">
+          <h3><i class="fas fa-headset"></i> Ainda com dúvidas?</h3>
+          <p>Entre em contato conosco pelos nossos canais oficiais:</p>
+          <div class="contact-buttons">
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="contact-btn discord-btn">
+              <i class="fab fa-discord"></i> Suporte via Discord
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Frosted Store</h3>
+        <p>Sua loja confiável de sets do Flee the Facility no Roblox</p>
+        <div class="social-links">
+          <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#sets" data-tab="sets">Produtos</a></li>
+          <li><a href="termos.html" data-tab="termos">Termos</a></li>
+          <li><a href="#faq" data-tab="faq">FAQ</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> contato@frostedstore.com</li>
+          <li><i class="fab fa-discord"></i> discord.gg/frosted</li>
+          <li><i class="fab fa-tiktok"></i> @frostedftf</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 Frosted Store. Todos os direitos reservados.</p>
+      <p>Não afiliado à Roblox Corporation ou aos criadores do Flee the Facility.</p>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
